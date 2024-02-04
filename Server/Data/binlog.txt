@@ -1,0 +1,19 @@
+
+/add k1 v1
+/add timur nub
+/del k1
+/add kirill nenub
+/add bobr kurwa
+/add dub mars
+/edit bobr nub
+/edit bobr kurwa
+
+/del bobr
+/add bobr kurwa
+
+/edit bobr nub
+/del dub
+/edit timur nenub
+/del bobr
+/add aboba kurwa
+/del aboba

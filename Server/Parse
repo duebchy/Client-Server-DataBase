@@ -1,0 +1,31 @@
+#include "includes.h"
+void parse(std::string& str, bool bin) {
+
+    std::string val1, val2;
+    if (str[0] == '/' && str[1] == 'a') { //add
+        int cnt = 5;
+        while (str[cnt] != ' ') {
+            val1 += str[cnt];
+            cnt++;
+        }
+        while (cnt < str.length()) {
+            cnt++;
+            val2 += str[cnt];
+
+        }
+
+
+        add(val1, val2);
+        if (bin == true) {
+            std::ofstream file;
+            file.open(bin_path, std::ofstream::app);
+            if (!file.is_open()) {
+                command = "unable to open file";
+            }
+            else {
+                file << command << "\n";
+                command = "";
+                file.close();
+            }
+        }
+    }
